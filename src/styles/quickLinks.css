@@ -1,0 +1,140 @@
+.quicklinks-wrapper {
+  background: #f6f7f9;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quicklinks-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 80px;
+}
+
+/* .quicklinks-section.reverse {
+  flex-direction: row-reverse;
+} */
+
+.text-block {
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+}
+
+.text-block h2 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0f0f0f;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.text-block h2 span {
+  border-bottom: 3px solid #ffca20;
+  padding-bottom: 3px;
+  color: inherit;
+}
+
+.text-block p {
+  font-size: 32px;
+  color: #2e2e2e;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.action-button {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 15px 22px;
+  border-radius: 28px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-button:hover {
+  background-color: #222;
+}
+
+.image-box {
+  height: auto;
+  width: 520px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .quicklinks-wrapper {
+    padding: 40px 16px;
+  }
+
+  .quicklinks-section {
+    flex-direction: column;
+    margin: -4px 0;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .text-block {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 8px;
+  }
+
+  .text-block h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-weight: 800;
+  }
+
+  .text-block h2 span {
+    border-bottom: 3px solid #ffca20;
+    padding-bottom: 2px;
+  }
+
+  .text-block p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .action-button {
+    font-size: 14px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .image-box {
+    order: 2;
+    width: 100%;
+    padding: 0 8px;
+    margin: 12px 0;
+  }
+
+  .image-box img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}
